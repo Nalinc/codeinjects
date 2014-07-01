@@ -1,14 +1,14 @@
 #/bin/bash
 
-for i in `ls F` 
+for i in `ls source` 
 do
-	for j in `ls F/$i`
+	for j in `ls source/$i`
 	do
        if [ $j == "A" ]
        	then
- 		    cp F/$i/$j/* ./destination/A                
+ 		    cp source/$i/$j/* ./destination/A                
         else
- 		    cp F/$i/$j/* ./destination/B                
+ 		    cp source/$i/$j/* ./destination/B                
         fi    
 	done
 done
